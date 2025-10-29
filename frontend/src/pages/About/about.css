@@ -1,0 +1,176 @@
+.about-page {
+  background-color: #000;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero {
+  width: 100%;
+  height: 400px; 
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--image-url);
+}
+
+.hero-text-overlay {
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.hero-subtitle {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.mr-white-section {
+  max-width: 1200px;
+  margin: 50px auto; 
+  padding: 0 20px; 
+}
+
+.mr-white-container {
+  background-color: #1a1a1a; 
+  color: #ffffff;
+  padding: 40px; 
+  display: flex; 
+  gap: 40px; 
+  align-items: center; 
+}
+
+.mr-white-image-col {
+  flex: 0 0 40%; 
+  max-width: 40%;
+}
+
+.mr-white-dog-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mr-white-text-col {
+  flex: 1; 
+  text-align: left;
+}
+
+.introduction-heading {
+  font-size: 1.8em; 
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex; 
+  align-items: center;
+  color: #ffffff; 
+}
+
+.introduction-heading::before {
+  content: "";
+  display: block;
+  width: 5px; 
+  height: 1.5em; 
+  background-color: #ffc107; 
+  margin-right: 15px; 
+}
+
+.body-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em; 
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 300; 
+}
+
+.closing-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.about-content {
+  margin-top: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+/* 📱 Tablet & small laptop */
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 3em;
+  }
+  .hero-subtitle {
+    font-size: 1.1em;
+  }
+  .mr-white-container {
+    gap: 25px;
+    padding: 30px;
+  }
+}
+
+/* 📱 Mobile (≤768px) */
+@media screen and (max-width: 768px) {
+  .about-hero {
+    height: 250px;
+  }
+  .hero-title {
+    font-size: 2.2em;
+  }
+  .hero-subtitle {
+    font-size: 1em;
+  }
+  .mr-white-container {
+    flex-direction: column;
+    padding: 25px 15px;
+  }
+  .mr-white-image-col {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-content {
+    font-size: 16px;
+    padding: 0 10px 40px;
+  }
+}
+
+/* 📱 Small mobile (≤480px) */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8em;
+  }
+  .hero-subtitle {
+    font-size: 0.9em;
+  }
+  .mr-white-container {
+    padding: 20px 12px;
+    gap: 20px;
+  }
+  .introduction-heading {
+    font-size: 1.4em;
+  }
+  .about-content {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}

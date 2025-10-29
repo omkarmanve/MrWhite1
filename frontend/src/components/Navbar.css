@@ -1,0 +1,212 @@
+/* ----------------------------
+   NAVBAR
+   ---------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Links (desktop) */
+.nav-links-left,
+.nav-links-right {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links-left li,
+.nav-links-right li {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ----------------------------
+   LOGIN BUTTON
+   ---------------------------- */
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 12px;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c4a85c; /* gold color */
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  background-color: #d1b86c; /* slightly lighter on hover */
+}
+
+.login-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.login-btn .login-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .login-btn {
+    width: 140px;
+    height: 39px;
+    font-size: 18px;
+    gap: 10px;
+    padding: 8px 16px;
+  }
+
+  .login-btn .login-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ----------------------------
+   CONTACT BUTTON
+   ---------------------------- */
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: #c4a85c;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------------------
+   RESPONSIVE CSS
+   ---------------------------- */
+@media (max-width: 1024px) {
+  .nav-links-left,
+  .nav-links-right {
+    gap: 1rem; /* reduce gap on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* stack if needed */
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links-left,
+  .nav-links-right {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap; /* allow wrapping */
+    gap: 1rem;
+  }
+
+  .contact-link {
+    padding: 6px 12px; /* smaller button */
+    font-size: 0.9em;
+  }
+
+  .login-btn {
+    width: 100px;
+    height: 32px;
+    font-size: 14px;
+    gap: 6px;
+    padding: 4px 10px;
+  }
+
+  .login-btn .login-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-links-left,
+  .nav-links-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 8px 0;
+    gap: 0.8rem;
+  }
+
+  .contact-link {
+    width: 100%;  
+    text-align: center;
+    justify-content: center;
+  }
+
+  .login-btn {
+    width: 100%;   
+    justify-content: center;
+  }
+}
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000;   
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.login-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.login-button:hover {
+  color: #fff;                
+}

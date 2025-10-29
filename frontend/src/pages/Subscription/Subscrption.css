@@ -1,0 +1,134 @@
+.subscription-page {
+  font-family: 'Work Sans', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+  color: #000;
+}
+
+.subscription-banner {
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 40px;
+  padding: 8px;
+}
+
+.subscription-header h1,
+.subscription-header p {
+  color: #fff;
+}
+
+.subscription-header h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.subscription-header p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.subscription-bullets {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bullet {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 200px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bullet-number {
+  width: 50px;
+  height: 50px;
+  background-color: #D3B86A;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto 15px;
+}
+
+.bullet-left { text-align: left; }
+.bullet-center { text-align: center; }
+.bullet-right { text-align: right; }
+
+.bullet h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.bullet p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.subscription-footer-header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.subscription-footer-header h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subscription-footer-header p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media (max-width: 1024px) {
+  .subscription-header h1 { font-size: 40px; }
+  .subscription-header p { font-size: 18px; }
+  .bullet h3 { font-size: 20px; }
+  .bullet p { font-size: 15px; }
+  .bullet-number { width: 45px; height: 45px; font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+  .subscription-bullets { flex-direction: column; gap: 15px; align-items: stretch; }
+  .subscription-banner { height: 300px; }
+  .bullet { min-width: 100%; text-align: center; }
+  .bullet-left, .bullet-right { text-align: center; }
+  .subscription-header h1 { font-size: 32px; }
+  .subscription-header p { font-size: 16px; }
+  .bullet h3 { font-size: 18px; }
+  .bullet p { font-size: 14px; }
+  .bullet-number { width: 40px; height: 40px; font-size: 18px; margin-bottom: 12px; }
+  .subscription-footer-header h2 { font-size: 28px; }
+  .subscription-footer-header p { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .subscription-page { padding: 20px 10px; }
+  .subscription-banner { height: 200px; }
+  .bullet { padding: 12px; }
+  .bullet-number { width: 35px; height: 35px; font-size: 16px; margin-bottom: 10px; }
+  .subscription-footer-header h2 { font-size: 24px; }
+  .subscription-footer-header p { font-size: 14px; }
+}

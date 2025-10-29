@@ -1,0 +1,457 @@
+
+.llhub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #000; /* Dark background for white text */
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+
+.llhub-banner {
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+  padding: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  border-radius: 8px;
+}
+
+.llhub-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* --------------------- Text + Images Section --------------------- */
+.llhub-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Left Text */
+.llhub-text {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.llhub-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.llhub-text p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* Right Images */
+.llhub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.llhub-images img {
+  width: 100%;
+  max-width: 698px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --------------------- Bottom Section --------------------- */
+.llhub-bottom {
+  max-width: 1200px;
+  margin: 3.5rem auto 2rem auto;
+  padding: 2rem 1rem;
+}
+
+.llhub-bottom h1 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.625rem;
+}
+
+.llhub-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.llhub-bottom-grid h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.llhub-bottom-grid p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --------------------- Page Container --------------------- */
+.page-container {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* --------------------- Content Area --------------------- */
+.content-area {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.content-area.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.section-block {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.section-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+/* --------------------- Top Image --------------------- */
+.top-image {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+/* --------------------- Bottom Image --------------------- */
+.bottom-image-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-image {
+  width: 60%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* --------------------- Responsive Adjustments --------------------- */
+@media (max-width: 1024px) {
+  .llhub-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .llhub-images img {
+    max-width: 90%;
+  }
+
+  .llhub-bottom h1 {
+    font-size: 2rem;
+  }
+
+  .llhub-bottom-grid h2 {
+    font-size: 1.5rem;
+  }
+
+  .llhub-bottom-grid p {
+    font-size: 0.95rem;
+  }
+
+  .content-area.reverse {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    flex-direction: column;
+  }
+
+  .bottom-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .llhub-text h2 {
+    font-size: 2rem;
+  }
+
+  .llhub-bottom h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .section-body {
+    font-size: 0.9rem;
+  }
+
+  .top-image,
+  .bottom-image {
+    width: 100%;
+  }
+}
+/* ==================================== */
+/* 1. Global Container Styles */
+/* ==================================== */
+.companion-story-container {
+    /* Layout and Spacing */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+
+    /* Aesthetics */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.story-header {
+    /* Color and Typography */
+    color: #0056b3; /* Deep Blue */
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2;
+
+    /* Separator Line */
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #ffcc00; /* Yellow Accent */
+}
+
+/* ==================================== */
+/* 2. Main Content Layout (Flexbox) */
+/* ==================================== */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-section {
+    flex: 2; /* Takes up more space */
+}
+
+.image-section {
+    flex: 1; /* Takes up less space */
+    min-width: 300px;
+    align-self: flex-start; /* Ensure it sticks to the top */
+}
+
+.companion-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Removes extra spacing below image */
+}
+
+/* ==================================== */
+/* 3. Typography and Details */
+/* ==================================== */
+.section-title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List Styling for Creative Ideas */
+.ideas-list {
+    list-style-type: none; /* Remove default bullet */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.list-item {
+    position: relative;
+    padding-left: 25px; /* Space for the custom bullet */
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Custom Bullet Point */
+.list-item::before {
+    content: "•"; /* Use a solid dot or Unicode character */
+    position: absolute;
+    left: 0;
+    color: #ff6b6b; /* Soft Red Accent */
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+/* Footer Note Style */
+.footer-note {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 5px solid #0056b3;
+    font-size: 0.95em;
+    font-style: italic;
+    color: #555;
+}
+
+/* ==================================== */
+/* 4. Responsiveness (Mobile Adaptation) */
+/* ==================================== */
+@media (max-width: 800px) {
+    .content-wrapper {
+        /* Stack columns vertically */
+        flex-direction: column;
+    }
+
+    .image-section {
+        /* Move the image to the top for better flow on small screens */
+        order: -1; 
+        margin-bottom: 20px;
+        min-width: auto; /* Remove fixed min-width */
+    }
+
+    .story-header {
+        font-size: 2em;
+    }
+}
+/* --------------------- New Section: A Day with Mr. White --------------------- */
+.new-day-section {
+  display: flex;
+  flex-direction: column; /* Stack all content vertically */
+  align-items: flex-start; /* Align everything to the left */
+  max-width: 900px;       /* Optional: limits line length for readability */
+  margin: 3rem auto;      /* Center section horizontally */
+  padding: 0 1rem;
+  color: #fff;            /* White text on dark background */
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Main Heading */
+.new-day-section .main-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Section Title */
+.new-day-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Subheadings */
+.new-day-section .subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+/* Paragraphs */
+.new-day-section .paragraph {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .new-day-section {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .new-day-section .main-heading {
+    font-size: 2rem;
+  }
+
+  .new-day-section .section-title {
+    font-size: 1.75rem;
+  }
+
+  .new-day-section .subheading {
+    font-size: 1.25rem;
+  }
+
+  .new-day-section .paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-day-section .main-heading {
+    font-size: 1.75rem;
+  }
+
+  .new-day-section .section-title {
+    font-size: 1.5rem;
+  }
+
+  .new-day-section .subheading {
+    font-size: 1.1rem;
+  }
+
+  .new-day-section .paragraph {
+    font-size: 0.95rem;
+  }
+}

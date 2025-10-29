@@ -1,0 +1,265 @@
+.page-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.column {
+  flex: 1;
+  background-color: #111;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.subheading {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sub-subheading {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.description {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.new-heading {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 20px 0 8px 0;
+  color: #D3B86A;
+}
+
+.subheading-small {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  background-color: #D3B86A;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.text-block {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-block div {
+  flex: 1;
+}
+
+.text-block p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.right-column-heading {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  margin-bottom: 8px;
+}
+
+.right-column-subheading {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.subscription-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 588px;
+  height: 47px;
+  padding: 12px 64px;
+  border-radius: 8px;
+  background-color: #D3B86A;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.subscription-container span {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+/* Responsive adjustments for page-container */
+@media (max-width: 1200px) {
+  .page-container {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .column {
+    padding: 18px 25px;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
+
+  .sub-subheading {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .new-heading {
+    font-size: 32px;
+  }
+
+  .subheading-small {
+    font-size: 13px;
+  }
+
+  .highlight-text {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .subscription-container {
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  .subscription-container span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .text-block {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .icon-box {
+    margin-bottom: 8px;
+  }
+
+  .right-column-heading {
+    font-size: 28px;
+  }
+
+  .right-column-subheading {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subheading {
+    font-size: 20px;
+  }
+
+  .sub-subheading {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .new-heading {
+    font-size: 28px;
+  }
+
+  .subheading-small {
+    font-size: 12px;
+  }
+
+  .highlight-text {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .right-column-heading {
+    font-size: 28px;
+  }
+
+  .right-column-subheading {
+    font-size: 16px;
+  }
+
+  .subscription-container {
+    width: 100%;
+    padding: 8px 20px;
+  }
+
+  .subscription-container span {
+    font-size: 14px;
+  }
+}

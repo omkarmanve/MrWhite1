@@ -1,0 +1,145 @@
+/* --- Page Wrapper --- */
+.signup-page {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-height: 100vh; 
+  background-color: #121212; /* subtle dark background */
+  font-family: 'Arial', sans-serif;
+  padding: 0; /* no extra padding, vertical centering handles top space */
+  box-sizing: border-box;
+}
+
+/* --- Signup Card --- */
+.signup-card {
+  width: 380px;
+  padding: 2em 40px; /* vertical and horizontal padding inside the card */
+  background-color: #1c1c1c; /* dark card background */
+  border-radius: 15px;        /* rounded corners */
+  border: 1px solid #333;     /* subtle box outline */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* depth shadow */
+  text-align: center;
+  animation: fadeInUp 0.6s ease;
+  box-sizing: border-box;
+}
+
+/* --- Smooth Animation --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Logo --- */
+.signup-logo-container {
+  margin-bottom: 35px;
+}
+
+.signup-header-image {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Input Fields --- */
+.signup-input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.signup-input-field {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-input-field:focus {
+  border-color: #daa520;
+  background-color: #1a1a1a; /* subtle focus effect */
+}
+
+.signup-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+}
+
+/* --- Links --- */
+.signup-links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.signup-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.signup-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* --- Buttons --- */
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  transform: translateY(-2px);
+}
+
+.signup-login-button {
+  background-color: #333;
+  color: #daa520;
+}
+
+.signup-connect-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.signup-button-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .signup-card {
+    width: 90%;
+    padding: 2em 25px;
+  }
+}

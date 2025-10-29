@@ -1,0 +1,82 @@
+/* Container for the component */
+.life-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* Top heading above the box */
+.life-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -5%;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 2;
+}
+
+/* Box styling */
+.life-box {
+  width: 1248px;
+  height: 740px;
+  background: #FFFFFF1A;
+  border-radius: 4px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  opacity: 1;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 64px;
+}
+
+/* Crew pack section inside the box */
+.crew-pack {
+  display: flex;
+  align-items: center;        /* vertically center text and logo */
+  justify-content: flex-start; /* align left */
+  width: 501px;               /* layout width */
+  height: 28px;               /* layout height */
+  opacity: 1;
+  gap: 8px;                   /* space between text and logo */
+  margin-top: 20px;
+}
+
+/* Text styling */
+.crew-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -5%;
+  text-align: center;
+  width: 501px;
+  height: 28px;
+  color: white;
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+}
+
+
+.crew-logo {
+  width: 19.06px;           
+  height: 19.10px;          
+  transform: rotate(0deg);
+  opacity: 1;
+}

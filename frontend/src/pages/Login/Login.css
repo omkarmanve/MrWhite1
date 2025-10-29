@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  justify-content: center;  
+    align-items: center;       
+  min-height: 100vh;        
+  background-color: #000;    
+  font-family: 'Arial', sans-serif;
+  max-width: 100vmax;
+}
+
+/* --- Card (Login Box) --- */
+.card {
+  width: 320px;
+  padding: 30px 40px;
+  background-color: #1c1c1c; /* dark gray card background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* --- Logo Section --- */
+.logo-container {
+  margin-bottom: 30px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Input Fields --- */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px 15px 15px 45px; /* space for icon */
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+}
+
+/* --- Links Section --- */
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.link:hover {
+  opacity: 1;
+  color: #daa520; /* golden on hover */
+}
+
+/* --- Buttons --- */
+.button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 15px;
+}
+
+.login-button {
+  background-color: #333;
+  color: #fff;              /* white text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:hover {
+  background-color: #daa520; /* golden background on hover */
+  color: #fff;               /* keep text white */
+}
+
+.button-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: inherit; /* same as button text */
+}
+
+/* --- Message Display --- */
+.message {
+  color: #daa520;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input-field {
+    padding: 12px 12px 12px 40px;
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

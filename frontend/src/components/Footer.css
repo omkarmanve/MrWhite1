@@ -1,0 +1,172 @@
+.footer-container {
+    background-color: #000;
+    color: #b0b0b0;
+    font-family: Arial, sans-serif;
+    padding: 30px 5%;
+}
+
+.footer-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #222;
+}
+
+.footer-col {
+    padding-right: 20px;
+}
+
+.brand-info {
+    flex-basis: 25%;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-text {
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 0.8em;
+    margin: 0;
+    color: #777;
+}
+
+.description-text {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.col-heading {
+    font-size: 1.1em;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-left: 3px solid #ffcc00;
+    padding-left: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.social-links .icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.contact-col {
+    margin-left: auto;
+}
+
+.contact-button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.contact-button:hover {
+    background-color: #e6b800;
+}
+
+.contact-button .icon {
+    margin-right: 8px;
+}
+
+.footer-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 0.85em;
+    background-color: #1a1a1a;
+    margin: 0 -5%;
+    padding: 15px 5%;
+}
+
+.legal-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-content-top {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-col {
+        flex-basis: 45%;
+        padding-right: 0;
+    }
+
+    .brand-info, .contact-col {
+        flex-basis: 100%;
+        order: -1;
+    }
+
+    .contact-col {
+        margin: 20px 0 0 0;
+    }
+
+    .footer-content-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .legal-links {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

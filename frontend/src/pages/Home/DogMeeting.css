@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+.dog-meeting-container {
+  width: 1344px;
+  margin: 50px auto;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 1;
+  background-color: #111;
+}
+
+.dog-meeting-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.dog-meeting-bottom {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+}
+
+.dog-meeting-left,
+.dog-meeting-right {
+  flex: 1;
+}
+
+.dog-meeting-left h2,
+.dog-meeting-right h2 {
+  margin-bottom: 10px;
+}
+
+.dog-meeting-left h4,
+.dog-meeting-right h4 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #d3d3d3;
+}
+
+.dog-meeting-left ul,
+.dog-meeting-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.dog-meeting-left li,
+.dog-meeting-right li {
+  margin-bottom: 8px;
+}
+/* Responsive adjustments for dog-meeting section */
+@media (max-width: 1200px) {
+  .dog-meeting-container {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .dog-meeting-bottom {
+    gap: 30px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .dog-meeting-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dog-meeting-left,
+  .dog-meeting-right {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .dog-meeting-container {
+    margin: 20px auto;
+    border-radius: 0;
+  }
+
+  .dog-meeting-bottom {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .dog-meeting-left h2,
+  .dog-meeting-right h2 {
+    font-size: 20px;
+  }
+
+  .dog-meeting-left h4,
+  .dog-meeting-right h4 {
+    font-size: 14px;
+  }
+
+  .dog-meeting-left ul,
+  .dog-meeting-right ul {
+    padding-left: 15px;
+  }
+
+  .dog-meeting-left li,
+  .dog-meeting-right li {
+    font-size: 14px;
+  }
+}
