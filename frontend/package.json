@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": {
-    "node": "22.x"
-  },
+   "engines": {
+  "node": ">=20"
+},
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -34,4 +34,5 @@
     "nodemon": "^3.1.10",
     "vite": "^7.1.12"
   }
+ 
 }
